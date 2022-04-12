@@ -6,10 +6,14 @@
 const katzDeli = []//Beginning of the day - deli is empty = empty array
 
 //1)Create a 'line' function, takes in array-which is katzDeli, returns a string, if nobody in line string should be "The line is currently empty."
-//(for loop?)
+//(for loop?)--not good at 
 // function line(katzDeli){
 //     return " " = "The line is currently empty."
 // }
+//tried to use array as parameter, then arr and both had errors they were not defined. 
+//tried interpolation, but names came back undefined 
+
+//**an empty array is represented with array.length??! */
 function line(katzDeli){
     const line2 = ['The line is currently:']
     const names = ["1. Ada", "2. Grace", "3. Kent"]
@@ -32,9 +36,10 @@ function takeANumber (katzDeli,stringLastinLine){
 
 //3type a function named nowServing. Parameter?Possibly katzDeli, 
 function nowServing (katzDeli){
+    // katzDeli.push
     console.log(line.shift())
     console.log("There is nobody waiting to be called!")
-}
+}nowServing(katzDeli)
 // takeANumber(katzDeli, "Ada") //=> Welcome, Ada. You are number 1 in line.
 // takeANumber(katzDeli, "Grace") //=> Welcome, Grace. You are number 2 in line.
 // takeANumber(katzDeli, "Kent") //=> Welcome, Kent. You are number 3 in line.
